@@ -1,4 +1,5 @@
 import ollama 
+question = input("Ask the question:")
 response = ollama.chat(
     model = "llama3.2:3b",
     messages=[
@@ -8,7 +9,7 @@ response = ollama.chat(
         },
         {
             "role": "user",
-            "content": "explain about tirupati trip?"       
+            "content": question       
         }
     ]
 )
