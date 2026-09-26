@@ -17,3 +17,8 @@ while True:
         ]
     )
     print(response["message"]["content"])
+    for message in messages:
+        if messages["role"] == "user":
+            print("You:", message["content"])
+        else:
+            print("AI:", message["content"])
