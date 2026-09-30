@@ -32,7 +32,7 @@ embeddings = model.encode(chunks)
 #print(embeddings.shape)
 
 #Chromdb 
-client = chromadb.Client()
+client = chromadb.Client() ##temporary database it creates
 collection = client.create_collection(name = "my_documents")
 print("Collection created successfully")
 ids=[]
